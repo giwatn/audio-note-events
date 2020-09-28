@@ -1,0 +1,136 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+body {
+    background-color: #181716;
+    font-family: 'Oswald', 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    margin: 0 auto 0 auto;
+}
+
+
+/* Responsive page rules at bottom of style sheet */
+
+h1 {
+    background-image: url(../img/kinglogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    text-indent: -1700%;
+    height: 75px;
+    line-height: 75px;
+    width: 117px;
+    margin: 0 auto 0 auto;
+    padding: 30px 10px 20px 10px;
+}
+
+h2 {
+    color: #cdc4c4;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    margin: 0 0 23px 0;
+}
+
+
+/* Form styles */
+
+form {
+    padding: 0 60px 65px 60px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #fff;
+}
+
+input[type='text'] {
+    background-color: #fff;
+    color: #666;
+    font-family: 'Oswald', 'Futura', sans-serif;
+    font-size: 24px;
+    width: 96%;
+    padding: 4px 6px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+input[type='text']:focus {
+    border: 1px solid #fff;
+    background-color: #fff;
+    outline: none;
+}
+
+
+/* AUDIO BUTTON */
+
+a[data-state='stop'] {
+    background-image: url(../img/pause.png);
+}
+
+a[data-state='record'] {
+    background-image: url(../img/record.png);
+}
+
+#buttons {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#buttons a {
+    width: 100px;
+    height: 100px;
+    text-indent: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/* Small screen - acts like the app would */
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: #403c3b;
+    }
+    #page {
+        max-width: 480px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+
+/* Larger screens act like a demo for the app */
+
+@media only screen and (min-width: 960px) {
+    #page {
+        max-width: 480px;
+        margin: 20px auto 20px auto;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    h1 {
+        background-image: url(../img/2xkinglogo.png);
+        background-size: 72px 72px;
+    }
+}
